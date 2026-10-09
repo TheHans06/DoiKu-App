@@ -17,6 +17,23 @@ class LoginScreen extends StatelessWidget{
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Text(
+              'DoiKu',
+              style: TextStyle(
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+                color: Colors.deepPurple
+              ),
+            ),
+            const Text(
+              'Masuk untuk mulai ngobrol sama Doi',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.indigo
+              ),
+            ),
+            const SizedBox(height: 40),
+
             const TextField(
               decoration: InputDecoration(
                 labelText: 'Email',
@@ -53,6 +70,24 @@ class LoginScreen extends StatelessWidget{
                 ),
               ),
             ),
+            const SizedBox(height: 24),
+            SizedBox(
+              width: double.infinity,
+              height: 50,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.deepPurpleAccent,
+                  foregroundColor: Colors.white
+                ),
+                onPressed: () {
+                  print("Tombol Daftar diclick");
+                },
+                child: const Text(
+                  'Daftar',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+              ),
+            )
           ],
         ),
       ),
