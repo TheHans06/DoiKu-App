@@ -51,7 +51,7 @@ class LoginScreen extends StatelessWidget{
               ),
             ),
 
-            const SizedBox(height: 24),
+            const SizedBox(height: 34),
 
             SizedBox(
               width: double.infinity,
@@ -87,7 +87,56 @@ class LoginScreen extends StatelessWidget{
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
-            )
+            ),
+
+            const SizedBox(height: 36),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                InkWell(
+                  onTap: () {
+                    // Login with Google Logic here
+                  },
+                  borderRadius: BorderRadius.circular(50),
+                  child: Container(
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.grey.shade300),
+                    ),
+                    child: Image.asset(
+                      'assets/images/google-logo-9824.png',
+                      width: 24,
+                      height: 24,
+                    ),
+                  ),
+                ),
+
+                const SizedBox(width: 16),
+
+                InkWell(
+                  onTap: () {
+                    // Login with Facebook Logic here
+                  },
+                  borderRadius: BorderRadius.circular(50),
+                  child: Container(
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.grey.shade300),
+                    ),
+                    child: Image.asset(
+                      'assets/images/facebook-logo.png',
+                      width: 24,
+                      height: 24,
+                    ),
+                  ),
+                ),
+
+                const SizedBox(height: 16),
+              ],
+            ),
           ],
         ),
       ),

@@ -1,4 +1,4 @@
-import 'package:doiku/login_screen.dart';
+import 'package:doiku/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
